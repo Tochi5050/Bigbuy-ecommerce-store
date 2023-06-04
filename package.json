@@ -1,0 +1,19 @@
+{
+  "name": "bigbuy",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An ecommerce store",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon serverside/server.js"
+  },
+  "author": "Tochi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "dotenv": "^16.1.3"
+  }
+}

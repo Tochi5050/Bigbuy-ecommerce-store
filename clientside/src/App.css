@@ -1,0 +1,22 @@
+@media (max-width: 991.98px) {
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  
+
+.custom-footer{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      margin-left: 33rem;
+
+}
+
+@media (max-width: 991.98px){
+  .custom-footer{
+    display: none;
+}
+}
