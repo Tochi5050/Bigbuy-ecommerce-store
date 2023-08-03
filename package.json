@@ -1,0 +1,25 @@
+{
+  "name": "bigbuy",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An ecommerce store",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon serverside/server.js",
+    "data:import": "node serverside/seeder",
+    "data:destroy": "node serverside/seeder -d"
+  },
+  "author": "Tochi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-router": "^0.0.1",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
