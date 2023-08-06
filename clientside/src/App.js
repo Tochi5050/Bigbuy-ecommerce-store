@@ -3,7 +3,7 @@ import {Container} from 'react-bootstrap'
 import Footer from './Components/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Products from './Components/Products';
+import HomeScreen from './Components/HomeScreen';
 
 function App() {
   return (
@@ -12,12 +12,12 @@ function App() {
     <Header />
     <main className="py-3">
      <Container>
-        <Products/>
+        <HomeScreen/>
       </Container>
       </main>
       <Footer />
     </>
   );
-}
+} 
 
 export default App;
