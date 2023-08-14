@@ -1,33 +1,35 @@
 export const products = [
-{
-  user: '64be6ad4975e2ab7578d3d66',
-  name: 'Mechanical ventilator',
-  image: '/images/ventilator.jpg',
-  brand: 'GE',
-  category: 'Airway Management',
-  description: 'Durable and reliable. Functions to meet aggressive lung ventilation demands.',
-  // reviews: [
-  //   {
-  //       name: 'Phillip',
-  //       rating: 5,
-  //       comment: 'Tried this product on a patient with respiratory distress, and it was awesome.',
-  //       user: '64be6ad4975e2ab7578d3d66',
-  //   }
-  // ],
-  rating: 5,
-  numReviews: 1, 
-  price: 2000,
-  countInStock: 50
-},
+  {
+    user: "64be6ad4975e2ab7578d3d66",
+    name: "Mechanical ventilator",
+    image: "/images/ventilator.jpg",
+    brand: "GE",
+    category: "Airway Management",
+    description:
+      "Durable and reliable. Functions to meet aggressive lung ventilation demands.",
+    // reviews: [
+    //   {
+    //       name: 'Phillip',
+    //       rating: 5,
+    //       comment: 'Tried this product on a patient with respiratory distress, and it was awesome.',
+    //       user: '64be6ad4975e2ab7578d3d66',
+    //   }
+    // ],
+    rating: 5,
+    numReviews: 1,
+    price: 2000,
+    countInStock: 0,
+  },
 
-{
-    user: '2',
-    name: 'Voluson Ultrasound',
-    image: '/images/ultrasound.jpg',
+  {
+    user: "2",
+    name: "Voluson Ultrasound",
+    image: "/images/ultrasound.jpg",
     // image: 'https://images.app.goo.gl/qGvAeuB1PgWdY8uv8',
-    brand: 'GE',
-    category: 'Women\'s Health Ultrasound',
-    description: 'Precise measurement capabilities for women\'s health, brought to your doorstep.',
+    brand: "GE",
+    category: "Women's Health Ultrasound",
+    description:
+      "Precise measurement capabilities for women's health, brought to your doorstep.",
     // reviews: [
     //   {
     //       name: 'Tochi',
@@ -37,19 +39,20 @@ export const products = [
     //   }
     // ],
     rating: 5,
-    numReviews: 1,
+    numReviews: 6,
     price: 7000,
-    countInStock: 25
+    countInStock: 25,
   },
 
   {
-    user: '3',
-    name: 'Automatic Washer',
-    image: '/images/washer.jpg',
+    user: "3",
+    name: "Automatic Washer",
+    image: "/images/washer.jpg",
     // image: 'https://images.app.goo.gl/X7dQWpaiGZFN3MHVA',
-    brand: 'Tuttnaeur',
-    category: 'Infection control',
-    description: 'Automated washer, capable of eliminating the toughest of medical device stains.',
+    brand: "Tuttnaeur",
+    category: "Infection control",
+    description:
+      "Automated washer, capable of eliminating the toughest of medical device stains.",
     // reviews: [
     //   {
     //       name: 'Christopher',
@@ -59,19 +62,20 @@ export const products = [
     //   }
     // ],
     rating: 5,
-    numReviews: 1,
+    numReviews: 7,
     price: 3500,
-    countInStock: 5
+    countInStock: 5,
   },
 
   {
-    user: '4',
-    name: 'Anaesthetic Machine',
-    image: '/images/anestheticmachine.jpg',
+    user: "4",
+    name: "Anaesthetic Machine",
+    image: "/images/anestheticmachine.jpg",
     // image: 'https://images.app.goo.gl/rmd9Jh41jDJjRz7q7',
-    brand: 'GE',
-    category: 'Anaesthesia',
-    description: 'Provides exceptional performance in anaesthetic care delivery',
+    brand: "GE",
+    category: "Anaesthesia",
+    description:
+      "Provides exceptional performance in anaesthetic care delivery",
     // reviews: [
     //   {
     //       name: 'Randolf',
@@ -81,19 +85,19 @@ export const products = [
     //   }
     // ],
     rating: 5,
-    numReviews: 1,
+    numReviews: 4,
     price: 5500,
-    countInStock: 5
+    countInStock: 5,
   },
 
   {
-    user: '5',
-    name: 'Delivery Bed',
-    image: '/images/deliverybed.jpg',
+    user: "5",
+    name: "Delivery Bed",
+    image: "/images/deliverybed.jpg",
     // image: 'https://images.app.goo.gl/oUBXu1yB441db8Bh8',
-    brand: 'Dolsan',
-    category: 'Women\'s Health',
-    description: 'Strong and reliable, provides optimum comfort.',
+    brand: "Dolsan",
+    category: "Women's Health",
+    description: "Strong and reliable, provides optimum comfort.",
     // reviews: [
     //   {
     //       name: 'Martha',
@@ -103,19 +107,19 @@ export const products = [
     //   }
     // ],
     rating: 5,
-    numReviews: 1,
+    numReviews: 6,
     price: 750,
-    countInStock: 5
+    countInStock: 5,
   },
 
   {
-    user: '6',
-    name: 'Examination Couch',
-    image: '/images/examinationcouch.jpg',
+    user: "6",
+    name: "Examination Couch",
+    image: "/images/examinationcouch.jpg",
     // image: 'https://images.app.goo.gl/BG6wgdRfTaJDf5D8A',
-    brand: 'Dolsan',
-    category: 'Furniture',
-    description: 'Reliable, provides optimum comfort.',
+    brand: "Dolsan",
+    category: "Furniture",
+    description: "Reliable, provides optimum comfort.",
     // reviews: [
     //   {
     //       name: 'Agnes',
@@ -125,19 +129,19 @@ export const products = [
     //   }
     // ],
     rating: 3.5,
-    numReviews: 1,
+    numReviews: 19,
     price: 50,
-    countInStock: 50
+    countInStock: 0,
   },
 
   {
-    user: '7',
-    name: 'Emergency Trolley',
-    image: '/images/emergencytrolley.jpg',
+    user: "7",
+    name: "Emergency Trolley",
+    image: "/images/emergencytrolley.jpg",
     // image: 'https://images.app.goo.gl/s1WgxLmkgahCQrmV8',
-    brand: 'Dolsan',
-    category: 'Furniture',
-    description: 'Rugged for the toughest spaces.',
+    brand: "Dolsan",
+    category: "Furniture",
+    description: "Rugged for the toughest spaces.",
     // reviews: [
     //   {
     //       name: 'Peter',
@@ -147,19 +151,19 @@ export const products = [
     //   }
     // ],
     rating: 4,
-    numReviews: 1,
+    numReviews: 31,
     price: 30,
-    countInStock: 72
+    countInStock: 0,
   },
 
   {
-    user: '8',
-    name: 'Operating Table',
-    image: '/images/operatingtable.png',
+    user: "8",
+    name: "Operating Table",
+    image: "/images/operatingtable.png",
     // image: 'https://images.app.goo.gl/naX7frQtLnvxh9gGA',
-    brand: 'Inspital',
-    category: 'Surgery',
-    description: 'Motorized operating table',
+    brand: "Inspital",
+    category: "Surgery",
+    description: "Motorized operating table",
     // reviews: [
     //   {
     //       name: 'Kolawole',
@@ -169,19 +173,19 @@ export const products = [
     //   }
     // ],
     rating: 2.5,
-    numReviews: 1,
+    numReviews: 81,
     price: 300,
-    countInStock: 7
+    countInStock: 7,
   },
 
   {
-    user: '9',
-    name: 'CT Scan',
-    image: '/images/ctscan.jpg',
+    user: "9",
+    name: "CT Scan",
+    image: "/images/ctscan.jpg",
     // image: 'https://images.app.goo.gl/oeZQWwKiK1GiqbYb8',
-    brand: 'GE',
-    category: 'Diagnostics',
-    description: 'Computerized Tomography Imaging',
+    brand: "GE",
+    category: "Diagnostics",
+    description: "Computerized Tomography Imaging",
     // reviews: [
     //   {
     //       name: 'Ibrahim',
@@ -191,19 +195,19 @@ export const products = [
     //   }
     // ],
     rating: 3,
-    numReviews: 1,
+    numReviews: 19,
     price: 60000,
-    countInStock: 3
+    countInStock: 3,
   },
 
   {
-    user: '10',
-    name: 'C-ARM Scan',
-    image: '/images/carm.jpg',
+    user: "10",
+    name: "C-ARM Scan",
+    image: "/images/carm.jpg",
     // image: 'https://images.app.goo.gl/h9o95nQGKkPVsDXW8',
-    brand: 'GE',
-    category: 'Diagnostics',
-    description: 'Imaging',
+    brand: "GE",
+    category: "Diagnostics",
+    description: "Imaging",
     // reviews: [
     //   {
     //       name: 'Thomas',
@@ -213,10 +217,8 @@ export const products = [
     //   }
     // ],
     rating: 2,
-    numReviews: 1,
+    numReviews: 16,
     price: 42000,
-    countInStock: 3
+    countInStock: 3,
   },
-
-
-]
+];

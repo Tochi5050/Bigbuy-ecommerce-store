@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
+import Ratings from "./Ratings";
 
 const Products = ({ product }) => {
   return (
@@ -32,7 +33,12 @@ const Products = ({ product }) => {
               {product.name}
             </Card.Title>
           </Link>
-
+          <Card.Text as="div">
+            <Ratings
+              ratings={product.rating}
+              reviews={`${product.numReviews}`}
+            />
+          </Card.Text>
           <Card.Text as="h3">${product.price}</Card.Text>
         </Card.Body>
       </Card>
