@@ -18,17 +18,29 @@ import {
 } from "react-bootstrap";
 import Header from "../Components/Header";
 import Rating from "../SupportComponents/Ratings";
+import { addToCart } from "../Redux/ApiSlice/cartSlice";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 const ProductDetailScreen = () => {
   const { id: productDetailsId } = useParams();
 
   const [quantity, setQuantity] = useState(1);
 
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const {
     data: product,
     isLoading,
     error,
   } = useGetProductDetailsQuery(productDetailsId);
+
+  const handleClick = () => {
+    dispatch(addToCart({ ...product, quantity }));
+
+    navigate("/cart");
+  };
 
   return (
     <div>
@@ -111,22 +123,16 @@ const ProductDetailScreen = () => {
                       </Row>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                      {product.countInStock > 0 ? (
-                        <Button
-                          variant="secondary"
-                          style={{ marginTop: "6px" }}
-                        >
-                          Add to cart
-                        </Button>
-                      ) : (
-                        <Button
-                          variant="secondary"
-                          style={{ marginTop: "6px" }}
-                          disabled
-                        >
-                          Add to cart
-                        </Button>
-                      )}
+                      <Button
+                        variant={
+                          product.countInStock <= 0 ? "secondary" : "primary"
+                        }
+                        style={{ marginTop: "6px" }}
+                        disabled={product.countInStock <= 0 ? true : false}
+                        onClick={handleClick}
+                      >
+                        Add to cart
+                      </Button>
                     </ListGroup.Item>
                   </ListGroup>
                 </Card>
