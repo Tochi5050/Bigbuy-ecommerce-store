@@ -15,6 +15,9 @@ import ProductDetailScreen from "./SupportComponents/ProductDetailScreen";
 import store from "./Redux/redux-store";
 import { Provider } from "react-redux";
 import CartScreen from "./Components/CartScreen";
+import ShippingScreen from "./Components/ShippingScreen";
+import PaymentDetails from "./Components/PaymentDetails";
+import PrivateRoutes from "./SupportComponents/PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +39,14 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <CartScreen />,
+  },
+  {
+    path: "/:shipping",
+    element: <PrivateRoutes />,
+  },
+  {
+    path: "/:payment",
+    element: <PaymentDetails />,
   },
 ]);
 
