@@ -9,7 +9,7 @@ const PaymentDetails = () => {
   const cart = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
   const price = parseInt(cart.totalPrice);
-  const publicKey = "pk_test_3472fc25785cd8ca1bdb89cd1f021878a185de08";
+  // const publicKey =
   const name = userInfo.res.name;
   const email = userInfo.res.email;
 
