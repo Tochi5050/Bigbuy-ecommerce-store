@@ -60,7 +60,9 @@ const CartScreen = () => {
             </ListGroup.Item>
             <ListGroup.Item>
               <Button bg="primary">
-                <Link to="/shipping">Proceed to checkout</Link>
+                <Link to="/shipping" style={{ color: "white" }}>
+                  Proceed to checkout
+                </Link>
               </Button>
             </ListGroup.Item>
           </ListGroup>
